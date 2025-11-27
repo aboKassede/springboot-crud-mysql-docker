@@ -1,2 +1,4 @@
 terraform/
 trash/
+.gitignore
+project-1.png
