@@ -13,6 +13,19 @@
       <a href="/new" class="btn btn-success">Add person</a>
     </div>
 
+    <!-- Cache Status Alert -->
+    <div class="alert alert-info mb-3">
+      <div class="row">
+        <div class="col-md-8">
+          <strong>🚀 Cache Status:</strong> <span th:text="${cacheStatus}">Cache info</span>
+        </div>
+        <div class="col-md-4 text-end">
+          <small><strong>Load Time:</strong> <span th:text="${loadTime}">0</span>ms</small>
+        </div>
+      </div>
+      <small class="text-muted">First load: Database query (~100ms) | Subsequent loads: Cache (~1ms)</small>
+    </div>
+
     <div class="card shadow-sm">
       <div class="card-body">
         <table class="table">
